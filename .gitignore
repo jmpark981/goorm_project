@@ -1,2 +1,28 @@
-.git
-.idea/
+# Flask
+instance/*
+!instance/.gitignore
+.webassets-cache
+.env
+
+# VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+#폴더 무시
+model_pth/
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# VisualStudioCode Patch
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/flask,visualstudiocode

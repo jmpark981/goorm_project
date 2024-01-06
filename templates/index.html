@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fake News Detector</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="static/img/sunglass_favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="static/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Custom Font(En) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap" rel="stylesheet">
+    <!-- Ko -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=DotGothic16&family=VT323&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+    
+<body style="background-color: #000000">
+    <!-- Start your project here-->
+    <!--페이지 메인 영역-->
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+            <a class="navbar-brand" style="color: #3BA53A;" lang="en" href="/">Fake News Detector</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggler">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="color: #3BA53A;" lang="ko" href="/">시작</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #3BA53A;" lang="ko" href="/input_url">입력</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #3BA53A;" lang="ko" href="#">결과</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #3BA53A;" lang="ko" id="dropdown" data-toggle="dropdown">서비스 개요</a>
+                        <div class="dropdown-menu dropdown-primary"
+                             aria-labelledby="dropdown" style="background-color: #000000 !important;">
+                            <a class="dropdown-item" style="color: #3BA53A;" lang="ko" href="/add_on">카카오 서비스</a>
+                            <a class="dropdown-item" style="color: #3BA53A;" lang="ko" href="/creator">만든이</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+   
+    
+    <!--페이지 메인 영역 -->
+    <main>
+        <div class="container mt-4">
+            <img src="static/img/matrix.gif" style="width: 100%; height: auto;">
+            <div style="text-align: center; color: #3BA53A;">
+                <h1 class="mt-2">About Fake News Detector</h1>
+            </div>
+            <hr>
+            <p style="text-align: center; color: #3BA53A;">
+                유네스코에 따르면 가짜 뉴스는 잘못된 정보, 허위 정보, 그리고 유해 정보 세가지 유형으로 분류된다고 합니다. <br>
+                이러한 유형의 가짜 뉴스들은 괴담, 선동, 선전, 낚시 기사, 체리피킹 등 다양한 방식으로 뉴스 포탈에 퍼져 있습니다. <br>
+                가짜뉴스는 사회적 혼란과 경제적 손실을 초래할 수 있으며, 이러한 피해를 방지하기 위한 가짜 뉴스 근절이 이루어져야 합니다. <br>
+                Fake News Detector는 <a href="https://factcheck.snu.ac.kr/" target="_blank"  style="font-weight: bold;">'SNU 팩트 체크'</a>
+                를 기반으로 잘못된 정보, 허위정보를 식별하는 데 중점을 둡니다.
+            <div style="text-align: center;">
+                <a href="/input_url" class="btn text-white btn-lg" style="background-color: #3BA53A; border-radius: 10px;">Enter</a>
+            </div>            
+        </div>
+        
+    </main>
+    
+    <!--페이지 하단부 영역 -->
+    <footer class="page-footer text-center text-md-left font-small pt-4 mt-4"  style="background-color: #0F2B0F;">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-8 pb-3">
+                    <h5 class="text-uppercase" style="color: #3BA53A;" lang="ko">
+                        이용 방법
+                    </h5>
+                    <p style="color: #3BA53A;">
+                        사용자는 Enter 버튼을 클릭하여 서비스를 이용할 수 있습니다. <br> 진위 여부를 판단하고 싶은 기사의 URL을 입력합니다. <br>
+                        그 후 사용자는 진위 여부와 판단 퍼센트 기사와 뉴스 URL을 결과로 제공받을 수 있습니다.   
+                </div>
+                
+                <div class="col-md-4 pb-3">
+                    <h5 class="text-uppercase" style="color: #3BA53A;" lang="ko">
+                        서비스 개요
+                    </h5>
+                    
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/add_on" style="color: #3BA53A;" lang="ko">카카오 서비스</a>
+                        </li>
+                        <li>
+                            <a href="/creator" style="color: #3BA53A;" lang="ko">만든이</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="footer-copyright py-3 text-center" style="color: #3BA53A;" lang="en">
+            © 2024 Copyright:
+            <a style="color: #3BA53A;" lang="ko">자연어처리 2팀</a> 
+        </div>
+    </footer>
+  <!-- End your project here-->
+  
+  <!-- jQuery -->
+  <script type="text/javascript" src="static/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="static/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+</body>
+</html>
